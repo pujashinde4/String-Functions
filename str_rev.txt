@@ -1,0 +1,23 @@
+/program 2-
+//program2-program for string reverse using function
+#include<stdio.h>
+char string_reverse(char* string);
+char string_reverse(char* string)
+{
+    int i,length;
+    for(i=0;string[i]!='\0';i++);
+    length=i;
+    for(i=length;i>=0;i--)
+    {
+        printf("%c",string[i]);
+    }
+}
+int main()
+{
+    int i;
+    char string[10];
+    printf("enter the string");
+    scanf("%s",string);
+    string_reverse(string);
+    return 0;
+}
