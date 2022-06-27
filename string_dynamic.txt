@@ -1,0 +1,36 @@
+*******************************************************************************/
+//program-use of calloc -string accept and display
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,n,*ptr;
+    printf("enter the value of n");
+    scanf("%d",&n);
+    ptr=(char*)calloc(ptr,sizeof(char));
+    if(ptr==NULL)
+    {
+        scanf("\nsorrry..........memory not allocated");
+        
+    }
+    printf("enter the string:");
+    for(i=0;i<n+1;++i)
+    {
+        scanf("%c",ptr+i);
+        
+    }
+   for(i=0;i<n+1;++i)
+    {
+        printf("%c",*(ptr+i));
+        
+    }
+    free(ptr);
+}
+
+****************OUTPUT*******************
+
+enter the value of n4
+enter the string:puja
+
+puja
+
